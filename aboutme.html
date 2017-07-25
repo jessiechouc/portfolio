@@ -11,8 +11,20 @@
 <h2> Favorite Webpages: Take a Look! </h2>
 <p>.</p>
 
+  <html>
  <head>
  <style>
+   div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(150deg); /* Standard syntax */
+}
    h1 {
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
@@ -28,6 +40,14 @@ p {
 
 </head>
  </style>
+ <div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees.
+</div>
+  
 </body>
 </html>
 
